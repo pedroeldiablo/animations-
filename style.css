@@ -8,7 +8,7 @@ h1 {
 
 body {
   background-color: black;
-  background-color: var(--boxcolor);
+  /*background-color: var(--boxcolor);*/
   /*display:flex;*/
 }
 
