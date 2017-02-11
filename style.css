@@ -1,5 +1,10 @@
 :root {
   --boxcolor : rgba(22,22,22,0.2);
+  /*--angle: 45deg;
+  --lineColor: #f00;
+  --lineThickness: 55px;
+  --lineSpacing: 25px;
+  --backgroundColor: #FFF;*/
 }
 
 h1 {
@@ -7,11 +12,20 @@ h1 {
 }
 
 body {
+ /*background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(22,22,22, 1));*/
+ /*background: repeating-linear-gradient(90deg, black, black .02%, white .05%, white .1%);*/
+  /*background-repeat: repeating-linear-gradient(45deg, rgba(255,255,255,0.8), rgba(255,255,255,0.8) 5px, rgba(255,255,255,0.8) 0, rgba(255,255,255,0.8) 25px+5px);*/
   /*background-color: black;*/
   background-color: rgba(5, 4, 10, 1);
   /*background-color:green;*/
   /*background-color: var(--boxcolor);*/
   /*display:flex;*/
+  -webkit-transition: width .8s, height .8s, background-color .8s, position .8s, background .8s margin .8s -webkit-transform .8s;
+    transition: width .8s, height .8s, background-color .8s, background .8s, position .8s, margin .8s, transform .8s;
+}
+
+body:hover{
+  background: repeating-linear-gradient(-180deg, black, black 1%, white 1%, white 10%);
 }
 
 .box {
@@ -31,8 +45,11 @@ body {
   display:flex;
   float: left;
   position:relative;
-  -webkit-transition: width 2s, height 2s, background-color 2s, position 2s, margin 2s -webkit-transform 2s;
-    transition: width 2s, height 2s, background-color 2s, position 2s, margin 2s, transform 2s;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, position 2s, margin 2s -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, position 2s, margin 2s, transform 2s;*/
+
+    -webkit-transition: width .8s, height .8s, background-color .8s, position .8s, margin .8s -webkit-transform .8s;
+      transition: width .8s, height .8s, background-color .8s, position .8s, margin .8s, transform .8s;
   /*flex: auto;*/
 }
 
