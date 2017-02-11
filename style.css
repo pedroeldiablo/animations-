@@ -49,7 +49,7 @@ body:hover{
     transition: width 2s, height 2s, background-color 2s, position 2s, margin 2s, transform 2s;*/
 
     -webkit-transition: width .8s, height .8s, background-color .8s, position .8s, margin .8s -webkit-transform .8s;
-      transition: width .8s, height .8s, background-color .8s, position .8s, margin .8s, transform .8s;
+      transition: width .8s, height .8s, background-color 10s, position .8s, margin .8s, transform .8s;
   /*flex: auto;*/
 }
 
@@ -235,7 +235,12 @@ body:hover{
   margin-left: 10%;
   width: 300px;
   height: 100px;
-  background-color: rgba(0,0,0,0.1);
+  /*background-color: red;
+  background-color: #e2ecf0;*/
+  background-color: hsla(170, 45%, 45%, 1);
+
+  /*background-color: hsla(170, 50%, 95%, 1);*/
+  /*background-color: rgba(0,0,0,0.1);*/
   z-index: 995;
   position:absolute;
 }
@@ -243,7 +248,11 @@ body:hover{
 .box10:hover {
   margin-top: 10%; /* Changes with height. */
   margin-left: -10%;
-  background-color: #FFCCCC;
+  /*background-color: hsla(300, 10%, 55%, 1);*/
+  /*background-color: #e2ecf0; /* Fallback */*/
+  background-color: hsla(190, 30%, 94%, 1);
+  background-color: hsla(275, 45%, 35%, 1);
+  /*background-color: #FFCCCC;*/
   width: 100px;
   height: 300px;
 }
